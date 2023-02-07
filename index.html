@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Font Awesome-->
+    <link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" 
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" 
+    crossorigin="anonymous" 
+    referrerpolicy="no-referrer" />
+
+    <!--google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Sarah Pritchard</title>
+</head>
+<body>
+    <header>
+            <div class="header-icons">
+                <i class="fa-solid fa-bars nav-btn" id="nav-btn">
+                    <nav class="nav-content" id="nav-content">
+                        <a href="#aboutme-section" class="nav-link">About Me</a>
+                        <a href="#portfolio-section" class="nav-link">Portfolio</a>
+                        <a href="#contact-section" class="nav-link">Contact Me</a>
+                    </nav>
+                </i>
+
+                <a href="https://www.linkedin.com/in/sarah-pritchard-a46235181/" target="_blank">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+                <a href="https://www.youtube.com/playlist?list=PLkZf4XXfit9BioTszlBqCVn5RDTdy4iCa" target="_blank">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+            </div>
+
+            <h1>Sarah Pritchard</h1>
+    </header>
+
+    <main>
+        <section class="headshot-section">
+            <img src="images/sarah-pritchard.jpg" 
+            alt="Sarah Pritchard smiles with the University of South Carolina's scenic Horseshoe in the background"
+            class="headshot">
+        </section>
+
+        <section class="aboutme-section" id="aboutme-section">
+            <h2 class="section-title">About Me</h2>
+            <div class="bio-container">
+                <div class="bio-paragraph">
+                    <p>
+                        Hello, my name is Sarah Pritchard. 
+                        I graduated from the University of South Carolina in 2020, majoring in Broadcast Journalism. 
+                        I am from Charleston, SC. This is an example of text for my bio. 
+                        It will say a little about me.
+                    </p>
+                </div>
+                <div class="bio-paragraph">
+                    <p>
+                        This text will include some of my professional background. 
+                        I have worked in Knoxville, TN for the last 3 years. 
+                        WVLT-8 has been my home. I produce the 6 oclock news. 
+                        I have also worked on different projects related to sports, etc.
+                    </p>
+                </div>
+            </div>
+            <button type="submit" 
+            class="download-resume-btn" 
+            id="download-resume-btn"
+            onclick="window.open('sarah-pritchard-resume.pdf')">Resume</button>
+        </section>
+    
+        <section class="portfolio-section" id="portfolio-section">
+            <h2 class="section-title">
+                <a href="https://www.youtube.com/playlist?list=PLkZf4XXfit9BioTszlBqCVn5RDTdy4iCa" target="_blank">Portfolio</a>
+            </h2>
+            <p>Below are some of the 
+                <a href="https://www.youtube.com/playlist?list=PLkZf4XXfit9BioTszlBqCVn5RDTdy4iCa" target="_blank" class="projects-link">projects</a>
+                 I have had the pleasure of producing.</p>
+            <ul class="portfolio-container">
+                <li class="portfolio-video video1">
+                    <a href="https://youtu.be/gpEtK6WIIFM" target="_blank">
+                        <img src="images/big-orange-tipoff.webp" alt="">
+                    </a>
+                    <h5 class="caption">Big Orange Tipoff</h5>
+                </li>
+    
+                <li class="portfolio-video video2">
+                    <a href="https://youtu.be/0uUpaPv_2JE" target="_blank">
+                        <img src="images/team-coverage.webp" alt="">
+                    </a>
+                    <h5 class="caption">Team Coverage</h5>
+                </li>
+    
+                <li class="portfolio-video video3">
+                    <a href="https://youtu.be/YHPloU3JUDk" target="_blank">
+                        <img src="images/a-block-example1.webp" alt="">
+                    </a>
+                    <h5 class="caption">A-Block</h5>
+                </li>
+    
+                <li class="portfolio-video video4">
+                    <a href="https://youtu.be/_FtfsaTQPak" target="_blank">
+                        <img src="images/a-block-example2.webp" alt="">
+                    </a>
+                    <h5 class="caption">A-Block</h5>
+                </li>
+    
+                <li class="portfolio-video video5">
+                    <a href="https://youtu.be/q9WAK6oH9uA">
+                        <img src="images/flood-cleanup.webp" alt="">
+                    </a>
+                    <h5 class="caption">Flood Live Shot</h5>
+                </li>
+    
+                <li class="portfolio-video video6">
+                    <a href="https://youtu.be/7-dBKGMBJEg">
+                        <img src="images/breaking-news.webp" alt="">
+                    </a>
+                    <h5 class="caption">Breaking News</h5>
+                </li>
+
+                <li class="portfolio-video video7">
+                    <a href="https://youtu.be/rMeCvWm_Wdc">
+                        <img src="images/wvlt6-1.webp" alt="">
+                    </a>
+                    <h5 class="caption">WVLT News at 6</h5>
+                </li>
+
+                <li class="portfolio-video video8">
+                    <a href="https://youtu.be/SJI_R42PlCE">
+                        <img src="images/wvlt6-2.webp" alt="">
+                    </a>
+                    <h5 class="caption">WVLT News at 6</h5>
+                </li>
+    
+            </ul>
+        </section>
+    
+        <section class="contact-section" id="contact-section">
+            <h2 class="contact-section-title">Contact Me</h2>
+            <div class="form-container">
+                <form action="" class="contact-form" id="contact-form">
+                    <label for="first-name">First Name</label><br>
+                    <input type="text" id="first-name" class="small-input-field" required><br>
+                    <label for="last-name">Last Name</label><br>
+                    <input type="text" id="last-name" class="small-input-field" required><br>
+                    <label for="form-email">Email</label><br>
+                    <input type="email" id="form-email" class="small-input-field" required><br>
+                    <label for="form-regarding">Regarding</label><br>
+                    <textarea name="form-regarding" 
+                    id="form-regarding" 
+                    class="large-input-field"
+                    cols="36" 
+                    rows="8" 
+                    placeholder="Enter message here" 
+                    required></textarea>
+                </form>
+            </div>
+
+            <button type="submit" id="submit-form" class="button-margin">Submit</button>
+        </section>
+    </main>
+
+    <script src="index.js"></script>
+</body>
+</html>
