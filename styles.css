@@ -17,6 +17,10 @@
 
 
 /* Sections */
+* {
+    box-sizing: border-box;
+}
+
 body {
     margin: auto;
     background-color: #E0E2DB;
@@ -165,11 +169,9 @@ main {
     padding-bottom: 25px;
 }
 
-/*
 .video-test{
-    width: 80%;
+    width: 100%;
 }
-*/
 
 
 
