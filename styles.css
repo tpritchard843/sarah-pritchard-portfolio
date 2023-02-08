@@ -163,7 +163,7 @@ main {
     margin: 0 10px 40px;
 }
 
-.portfolio-video {
+.column .portfolio-video {
     text-align: center;
     vertical-align: middle;
     width: 100%;
