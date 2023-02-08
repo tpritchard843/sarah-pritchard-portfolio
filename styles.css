@@ -1,3 +1,22 @@
+/* Responsive layout */
+
+@media screen and (max-width: 800px) {
+    .column {
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    .column {
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+
+
+/* Sections */
 body {
     margin: auto;
     background-color: #E0E2DB;
@@ -5,7 +24,6 @@ body {
 }
 
 header {
-    padding: 10px 20px;
     text-align: center;
     background-color: #889696;
     width: 100%;
@@ -17,21 +35,26 @@ header {
 
 main {
     text-align: center;
-    padding-top: 100px;
+    padding-top: 90px;
 }
 
-
 .aboutme-section,
+.portfolio-section,
+.contact-section {
+    max-width: 100%;
+}
+
+.aboutme-section{
+    padding: 55px 0 10px 0;
+}
+
 .contact-section {
     padding: 10px 0;
 }
 
 .portfolio-section {
-    padding: 10px 0 25px 0;
-}
-
-.headshot-section {
-    padding: 50px 0 0 0;
+    padding: 55px 0 25px 0;
+    margin-bottom: 10px;
 }
 
 .contact-section {
@@ -41,12 +64,6 @@ main {
 
 .section-title {
     margin-top: 0;
-}
-
-h1 {
-    font-weight: 700;
-    font-size: 20px;
-    margin-right: 40px;
 }
 
 /* Header */
@@ -66,6 +83,7 @@ h1 {
 }
 
 .nav-content {
+    font-family: 'Libre Baskerville', serif;
     display: none;
     position: absolute;
     background-color: #E0E2DB;
@@ -84,7 +102,7 @@ h1 {
 }
 
 .nav-content a:hover {
-    background-color: #bbbbbb;
+    background-color: #889696;
 }
 
 .nav-btn:hover .nav-content {
@@ -94,7 +112,7 @@ h1 {
 
 
 .headshot {
-    width: 550px;
+    width: 65%;
     border-radius: 2px;
 }
 
@@ -113,64 +131,47 @@ h1 {
     width: 250px;
 }
 
+.bio-text {
+    margin-top: 0;
+}
+
 
 
 /* Portfolio Section */
 
 .portfolio-container {
-    display: grid;
-    grid-template-columns: 1fr, 1fr, 1fr, 1fr;
-    gap: 30px;
+    display: flex;
+    flex-wrap: wrap;
+
     padding: 0;
     margin-bottom: 0;
     margin-top: 28px;
-    justify-content: center;
+}
+
+.column {
+    padding: 0;
+    flex: 20%;
+    max-width: 25%;
+}
+
+.portfolio-text {
+    margin-bottom: 40px;
 }
 
 .portfolio-video {
     text-align: center;
+    vertical-align: middle;
+    width: 100%;
+    padding-bottom: 25px;
 }
 
-
-.video1 {
-    grid-column: 1;
-    grid-row: 1;
+/*
+.video-test{
+    width: 80%;
 }
+*/
 
-.video2 {
-    grid-column: 2;
-    grid-row: 1;
-}
 
-.video3 {
-    grid-column: 3;
-    grid-row: 1;
-}
-
-.video4 {
-    grid-column: 4;
-    grid-row: 1;
-}
-
-.video5 {
-    grid-column: 1;
-    grid-row: 2;
-}
-
-.video6 {
-    grid-column: 2;
-    grid-row: 2;
-}
-
-.video7 {
-    grid-column: 3;
-    grid-row: 2;
-}
-
-.video8 {
-    grid-column: 4;
-    grid-row: 2;
-}
 
 
 .caption {
@@ -190,7 +191,7 @@ h1 {
 }
 
 
-
+/* elements */
 
 label:hover,
 button:hover,
@@ -211,30 +212,27 @@ a, a:visited {
     display: none;
 }
 
-ul {
-    list-style: none;
+h1 {
+    font-weight: 700;
+    font-size: 20px;
+    margin-right: 20px;
 }
-li {
-    padding-bottom: 0;
+
+h2 {
+    font-size: 30px;
+}
+
+.contact-section-title {
+    margin: 20px 0 20px 0;
 }
 
 button {
     border: none;
     border-radius: 20px;
     width: 70px;
-    padding: 5px;
-    margin-bottom: 8px;
+    padding: 10px 10px;
+    margin: 18px 0 8px 0;
     background-color: #E0E2DB;
-}
-
-input,
-textarea {
-    margin-bottom: 10px;
-    width: 550px;
-}
-
-textarea {
-    resize: none;
 }
 
 .download-resume-btn {
@@ -242,8 +240,13 @@ textarea {
     color: #E0E2DB;
 }
 
-.contact-section-title {
-    margin: 20px 0 20px 0;
+input,
+textarea {
+    margin-bottom: 10px;
+    width: 65%;
 }
 
+textarea {
+    resize: none;
+}
 
