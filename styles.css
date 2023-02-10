@@ -211,7 +211,8 @@ h2 {
     margin: 20px 0 20px 0;
 }
 
-button {
+button,
+.button {
     border: none;
     border-radius: 20px;
     width: 70px;
@@ -236,4 +237,3 @@ textarea {
 textarea {
     resize: none;
 }
-

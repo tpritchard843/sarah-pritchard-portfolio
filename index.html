@@ -5,10 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--Font Awesome-->
-    <link rel="stylesheet" 
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" 
-    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" 
-    crossorigin="anonymous" 
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous"
     referrerpolicy="no-referrer" />
 
     <!--google fonts-->
@@ -78,7 +78,7 @@
 
     <main>
         <section class="headshot-section">
-            <img src="images/sarah-pritchard.jpg" 
+            <img src="images/sarah-pritchard.jpg"
             alt="Sarah Pritchard smiles with the University of South Carolina's scenic Horseshoe in the background"
             class="headshot">
         </section>
@@ -88,35 +88,36 @@
             <div class="bio-container">
                 <div class="bio-paragraph">
                     <p>
-                        Hello, my name is Sarah Pritchard. 
-                        I graduated from the University of South Carolina in 2020, majoring in Broadcast Journalism. 
-                        I am from Charleston, SC. This is an example of text for my bio. 
-                        It will say a little about me.
+                        A proud native of Charleston, South Carolina, Sarah Pritchard graduated from the University of South Carolina in May 2020. After beginning her journalism career during the pandemic, Pritchard has grown to become an innovative and dynamic news producer with nearly three years of dedicated experience in Knoxville, Tennessee.
+                        <br>
+                        <br>
+                        She gained valuable skills producing various shows for the first year of her professional career. As a result of her success, Pritchard’s passion and hard work were
                     </p>
                 </div>
                 <div class="bio-paragraph">
                     <p>
-                        This text will include some of my professional background. 
-                        I have worked in Knoxville, TN for the last 3 years. 
-                        WVLT-8 has been my home. I produce the 6 oclock news. 
-                        I have also worked on different projects related to sports, etc.
+                        noted when she was asked to take over the 6 p.m. show.
+                        She quickly excelled in the role, bringing the newscast from last in the market to a strong number two, going toe-to-toe with legacy stations.
+                        <br>
+                        <br>
+	                    Pritchard was also asked to produce a two-part special project, highlighting some of the country’s greatest military heroes, when the Medal of Honor Celebration came to Knoxville. She has served as a leader in the newsroom, using effective communication skills and news-judgement to support others.
                     </p>
                 </div>
             </div>
-            <button type="submit" 
-            class="download-resume-btn" 
+            <button type="submit"
+            class="download-resume-btn"
             id="download-resume-btn"
             onclick="window.open('sarah-pritchard-resume.pdf')">Resume</button>
         </section>
-    
+
         <section class="portfolio-section" id="portfolio-section">
             <h2 class="section-title">
                 <a href="https://www.youtube.com/playlist?list=PLkZf4XXfit9BioTszlBqCVn5RDTdy4iCa" target="_blank">Portfolio</a>
             </h2>
-            <p>Below are some of the 
+            <p>Below are some of the
                 <a href="https://www.youtube.com/playlist?list=PLkZf4XXfit9BioTszlBqCVn5RDTdy4iCa" target="_blank" class="projects-link">projects</a>
                  I have had the pleasure of producing.</p>
-            
+
             <div class="portfolio-container">
 
                 <div class="column">
@@ -194,29 +195,57 @@
                 </div>
             </div>
         </section>
-    
+
         <section class="contact-section" id="contact-section">
             <h2 class="contact-section-title">Contact Me</h2>
             <div class="form-container">
-                <form action="" class="contact-form" id="contact-form">
+                <form action="https://submit-form.com/BVBRdiPA"
+                class="contact-form"
+                id="contact-form">
                     <label for="first-name">First Name</label><br>
-                    <input type="text" id="first-name" class="small-input-field" required><br>
+                    <input type="text"
+                    id="first-name"
+                    class="small-input-field"
+                    name="first-name"
+                    required><br>
+
                     <label for="last-name">Last Name</label><br>
-                    <input type="text" id="last-name" class="small-input-field" required><br>
+                    <input type="text"
+                    id="last-name"
+                    class="small-input-field"
+                    name="last-name"
+                    required><br>
+
+
                     <label for="form-email">Email</label><br>
-                    <input type="email" id="form-email" class="small-input-field" required><br>
+                    <input type="email"
+                    id="form-email"
+                    class="small-input-field"
+                    name="form-email"
+                    required><br>
+
+
+                    <label for="phone-number">Phone Number</label><br>
+                    <input type="tel"
+                    id="phone-number"
+                    class="small-input-field"
+                    name="phone-number"
+                    required><br>
+
+
                     <label for="form-regarding">Regarding</label><br>
-                    <textarea name="form-regarding" 
-                    id="form-regarding" 
+                    <textarea name="form-regarding"
+                    id="form-regarding"
                     class="large-input-field"
-                    cols="36" 
-                    rows="8" 
-                    placeholder="Enter message here" 
+                    cols="36"
+                    rows="8"
+                    placeholder="Enter message here"
                     required></textarea>
+                    <br>
+                    <button class="button button-margin" type="submit" onclick="submitTest()">Submit</button>
                 </form>
             </div>
 
-            <button type="submit" id="submit-form" class="button-margin">Submit</button>
         </section>
     </main>
 
