@@ -60,6 +60,7 @@ main {
     justify-content: space-evenly;
     align-items: center;
     font-size: 20px;
+    margin-left: 30px;
 }
 
 .nav-btn {
@@ -96,10 +97,21 @@ main {
 }
 
 
+.header-phone-number {
+    font-size: 15px;
+    margin-top: 0;
+}
+
+.header-text-div {
+    text-align: center;
+    margin-right: 50px;
+}
+
 
 .headshot {
     width: 30%;
     border-radius: 2px;
+    margin-top: 20px;
 }
 
 
@@ -200,7 +212,7 @@ a, a:visited {
 h1 {
     font-weight: 700;
     font-size: 20px;
-    margin-right: 20px;
+    margin-bottom: 5px;
 }
 
 h2 {
@@ -215,8 +227,8 @@ button,
 .button {
     border: none;
     border-radius: 20px;
-    width: 70px;
-    padding: 10px 10px;
+    width: 100px;
+    padding: 10px 15px;
     margin: 18px 0 8px 0;
     background-color: #E0E2DB;
     color: black;
